@@ -1,0 +1,76 @@
+How to set a billing budget
+
+Type "Budget" in search bar
+
+Budget is just heads up before you get billed
+
+
+Create Instance
+
+Before you can make a instance you need to create a security group 1st
+
+Click create security group 
+
+Name it (Lizzo4Shizzo)
+Give it a description (My Lovely Lizzo)
+VPC stay in default
+Add inbound rules 
+Https, Protocol: TCP,  Port: 80, Source: Anywhere -IVP4
+SSH, Protocol: TCP, Port: 22, Source: Anywhere -IVP4
+
+DO NOT TOUCH OUTBOUND RULES!!!
+
+Click create security groups (orange button)
+
+Go instances & click launch instances
+
+Name instance (Publix-1)
+Don't touch App & OS Images
+Instance type t3.micro is good
+Click create key pair
+RSA is good
+.pem is good
+Click create key pair & it will download a file 
+
+
+Go to Network Settings & select existing security group (Lizzo4Shizzo)
+
+Do NOT USE LAUNCH WIZARD EVER!!!
+
+Copy & paste script in advanced details (USER DATA)
+DO NOT CHECK THE BOX BELOW!!!
+Click launch instance & click instance ID
+Copy public DNS & before your paste the link make sure to type HTTP:// then paste the link
+
+Connect to your Instance
+
+Under instances click connect
+Don't touch anything just click the orange button
+A black page with a bird should pop up to let you know you're connected
+
+Create templet
+
+Under actions click images & templates
+Then click create image from templates
+Name your template (LizzoLuv69)
+Do not change the ami (collapse it)
+Instance type is good (collapse it)
+Key pair is good don't touch it (collapse it)
+Network setting are good (collapse it)
+Collapse storage 
+You can tag if you want but don't have to
+Scroll down to advanced settings 
+Create launch template then click green box to ensure template is launched 
+
+Click actions & modify template
+Give template version description (Lizzo eats baddie)
+Then replace script & click create template
+Click green box to take you to template & you should see that you have 2 templates instead of 1
+
+
+
+
+
+
+
+
